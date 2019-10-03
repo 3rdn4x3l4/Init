@@ -1,0 +1,5 @@
+#nslookup $(ifconfig en0 |grep "inet " |cut -d' ' -f2)
+Server:		10.51.1.42
+Address:	10.51.1.42#53
+
+18.6.11.10.in-addr.arpa	name = e1r6p18.42.fr.

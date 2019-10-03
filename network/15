@@ -1,0 +1,2 @@
+Il faut rajouter au fichier /etc/hosts l'addresse 46.19.122.85 associe au domaine intra.42.fr:
+#46.19.122.85	intra.42.fr

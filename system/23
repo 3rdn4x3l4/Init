@@ -1,0 +1,6 @@
+apres avoir creer un password avec la command passwd
+en SSH:
+ssh newuser@localhost -p 4242 depuis le mac
+en Session graphique: 
+apres avoir lance la VM
+depuis l'ecran de login en entrant le username et le password

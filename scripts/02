@@ -1,0 +1,13 @@
+#! /bin/bash
+if [ $# -eq 0 ];
+then echo "I need an username" && exit;
+fi
+if [ $(getent passwd $1) ] ;
+then 
+	DUID=$(cat /etc/passwd | grep $1 | cut -d: -f3)
+	sudo userdel -r -f $1
+	sudo pkill -9 -U $DUID
+	exit
+else
+	echo "$1 is not an existing user"
+fi

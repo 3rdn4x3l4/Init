@@ -1,0 +1,2 @@
+a) ifconfig en0 |grep broadcast |rev |cut -d' ' -f1 |rev
+b) ping -c2 $(ifconfig en0 |grep broadcast |rev |cut -d' ' -f1 |rev) >> /dev/null ; arp -a | grep -v incomplete | cut -d'(' -f2| cut -d')' -f1
